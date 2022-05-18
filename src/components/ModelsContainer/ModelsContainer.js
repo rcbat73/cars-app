@@ -16,7 +16,7 @@ const ModelsContainer = ({ modelCardsList = [], onSelectedCard }) => {
   const onClickCard = (id) => () => {
     onSelectedCard(id);
   };
-  console.log(modelCardsList);
+
   return (
     <CardsContainer>
       {modelCardsList.map(({ id, photo, make, model, price }) => (

@@ -19,8 +19,6 @@ const ModelCard = ({ photo, make, model, price, onClick }) => {
   const caption = `Price: ${price}`;
   const alt = `${make} - ${model}`;
 
-  console.log(photo, make, model, price);
-
   return (
     <StyledButton onClick={onClick} aria-label={alt}>
       <h3>{alt}</h3>
