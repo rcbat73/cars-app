@@ -1,4 +1,11 @@
 import { useState } from "react";
+import styled from "styled-components";
+
+const StyledLabel = styled("label")`
+  & > input {
+    margin-left: 10px;
+  }
+`;
 
 const FilterInput = ({ onColorChange }) => {
   const [value, setValue] = useState("");
@@ -7,7 +14,12 @@ const FilterInput = ({ onColorChange }) => {
     onColorChange(event.target.value);
   };
 
-  return <input value={value} onChange={onChangeHandler} />;
+  return (
+    <StyledLabel>
+      Filter by Color:
+      <input value={value} onChange={onChangeHandler} />
+    </StyledLabel>
+  );
 };
 
 export default FilterInput;
