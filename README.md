@@ -4,7 +4,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-An environment variable is used, create a .env file to type the environment varible inside.
+An environment variable is used, create a .env file to type the environment variable inside.
 
 After installation run:
 
